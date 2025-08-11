@@ -3,14 +3,14 @@
 
 ## Install Ollama  Linux
 
-    <details>
-    <summary>Install Ollama  Linux</summary>
+<details>
+<summary>Install Ollama  Linux</summary>
         ##Vist https://ollama.com/download
         ##Install with one command
         curl -fsSL https://ollama.com/install.sh | sh
         sudo usermod -aG ollama $USER
         sudo chmod -R 775 /usr/share/ollama/.ollama
-    </details>
+</details>
 
 
 ### Ollama  Linux Cli 
