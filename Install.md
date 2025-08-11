@@ -9,6 +9,27 @@
         curl -fsSL https://ollama.com/install.sh | sh
         sudo usermod -aG ollama $USER
         sudo chmod -R 775 /usr/share/ollama/.ollama
+
+        ## Uninstall / remove  Ollama
+
+            ### Only Ollama Del, Models Untouched /usr/share/ollama/.ollama
+            sudo systemctl stop ollama
+            sudo systemctl disable ollama
+            sudo rm /etc/systemd/system/ollama.service
+            sudo rm $(which ollama)
+            sudo userdel ollama
+            sudo groupdel ollama
+        
+        
+        
+            ## Delete All
+            sudo systemctl stop ollama
+            sudo systemctl disable ollama
+            sudo rm /etc/systemd/system/ollama.service
+            sudo rm $(which ollama)
+            sudo rm -r /usr/share/ollama
+            sudo userdel ollama
+            sudo groupdel ollama
 </details>
 
 
@@ -62,27 +83,18 @@
 
 
 
-## Uninstall / remove  Ollama
 
-    ### Only Ollama Del, Models Untouched /usr/share/ollama/.ollama
-    sudo systemctl stop ollama
-    sudo systemctl disable ollama
-    sudo rm /etc/systemd/system/ollama.service
-    sudo rm $(which ollama)
-    sudo userdel ollama
-    sudo groupdel ollama
-
-
-
-    ## Delete All
-    sudo systemctl stop ollama
-    sudo systemctl disable ollama
-    sudo rm /etc/systemd/system/ollama.service
-    sudo rm $(which ollama)
-    sudo rm -r /usr/share/ollama
-    sudo userdel ollama
-    sudo groupdel ollama
-
+## Install python
+<details>
+<summary>Install python3  Linux</summary>
+    ##Vist   https://www.python.org/downloads/source/
+    or for linux 
+    # For Debian/Ubuntu, use:
+    sudo apt-get install python3
+    #For Fedora/CentOS, use:
+    sudo yum install python3
+    python3 --version
+</details>
 
 
 ## Ref.
