@@ -1,5 +1,7 @@
 # Ollama
 
+## Install Ollama  Linux
+
 <details>
 <summary>Install Ollama  Linux</summary>
         ##Vist https://ollama.com/download
@@ -8,7 +10,7 @@
         sudo usermod -aG ollama $USER
         sudo chmod -R 775 /usr/share/ollama/.ollama
 </details>
-## Install Ollama  Linux
+
 
 
 
