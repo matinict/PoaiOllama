@@ -103,16 +103,25 @@
 <details>
 <summary>Install python3 </summary>
         
-    ##Vist   https://www.python.org/downloads/source/
-    or for linux 
-    # For Debian/Ubuntu, use:
-    sudo apt-get install python3
-    #For Fedora/CentOS, use:
-    sudo yum install python3
-    python3 --version
-
-      # create virtual environment in this directory  self-contained that contains a Python interpreter and all the libraries and scripts install,isolated from other Python projects.
-    python3 -m venv .venv
+        ##Vist   https://www.python.org/downloads/source/
+        or for linux 
+        # For Debian/Ubuntu, use:
+        sudo apt-get install python3
+        #For Fedora/CentOS, use:
+        sudo yum install python3
+        python3 --version
+        
+        # create virtual environment in this directory  self-contained that contains a Python interpreter and all the libraries and scripts install,isolated from other Python projects.
+        python3 -m venv .venv
+        
+        #Activating the Virtual Environment 
+        ##**On macOS and Linux:** 
+        source .venv/bin/activate 
+        ##**On Windows (Command Prompt):** 
+        .venv\Scripts\activate 
+        ##**On Windows (PowerShell):** 
+        .venv\Scripts\Activate.ps1 
+        
 </details>
 
 
