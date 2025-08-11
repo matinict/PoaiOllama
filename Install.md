@@ -110,6 +110,9 @@
     #For Fedora/CentOS, use:
     sudo yum install python3
     python3 --version
+
+      # create virtual environment in this directory  self-contained that contains a Python interpreter and all the libraries and scripts install,isolated from other Python projects.
+    python3 -m venv .venv
 </details>
 
 
