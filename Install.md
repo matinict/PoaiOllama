@@ -1,14 +1,21 @@
 # Ollama
 
-## Install Ollama  Linux
+## Install Ollama 
 
 <details>
-<summary>Install Ollama  Linux</summary>
+<summary>Install Ollama </summary>
+        
         ##Vist https://ollama.com/download
         ##Install with one command
         curl -fsSL https://ollama.com/install.sh | sh
         sudo usermod -aG ollama $USER
         sudo chmod -R 775 /usr/share/ollama/.ollama
+
+        ### Ollama   Cli 
+        sudo systemctl status ollama
+        sudo systemctl start ollama
+        sudo systemctl stop ollama
+        ollama list 
 
         ## Uninstall / remove  Ollama
 
@@ -30,20 +37,28 @@
             sudo rm -r /usr/share/ollama
             sudo userdel ollama
             sudo groupdel ollama
+
+  
 </details>
 
 
 
 
 
-### Ollama  Linux Cli 
 
-    sudo systemctl status ollama
-    sudo systemctl start ollama
-    sudo systemctl stop ollama
-    ollama list 
 
-## Install model  Linux
+## Install model   
+
+<details>
+<summary>Install model </summary>
+        
+    ##Vist   https://ollama.com/search
+    ollama run deepseek-r1
+    ollama run deepseek-r1:1.5b
+    ollama run llama3
+    ollama run llama3:latest
+</details>
+
 
 ## Install  VS Code
 
@@ -86,7 +101,7 @@
 
 ## Install python
 <details>
-<summary>Install python3  Linux</summary>2
+<summary>Install python3 </summary>
         
     ##Vist   https://www.python.org/downloads/source/
     or for linux 
