@@ -25,18 +25,62 @@
 
 #### Click the button to install:
 
-[<img src="https://img.shields.io/badge/VS_Code-VS_Code?style=flat-square&label=Install%20Server&color=0098FF" alt="Install in VS Code">](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522playwright%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522%2540playwright%252Fmcp%2540latest%2522%255D%257D) [<img alt="Install in VS Code Insiders" src="https://img.shields.io/badge/VS_Code_Insiders-VS_Code_Insiders?style=flat-square&label=Install%20Server&color=24bfa5">](https://insiders.vscode.dev/redirect?url=vscode-insiders%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522playwright%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522%2540playwright%252Fmcp%2540latest%2522%255D%257D)
+ https://code.visualstudio.com/download
 
-#### Or install manually:
+#### Or install cli : 
 
-Follow the MCP install [guide](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_add-an-mcp-server), use the standard config above. You can also install the Playwright MCP server using the VS Code CLI:
-
-```bash
-# For VS Code
-code --add-mcp '{"name":"playwright","command":"npx","args":["@playwright/mcp@latest"]}'
-```
-
-After installation, the Playwright MCP server will be available for use with your GitHub Copilot agent in VS Code.
+    To install Visual Studio Code (VS Code) on Ubuntu using the command line interface (CLI), follow these steps:
+    
+    1. **Update the package list**:
+       ```bash
+       sudo apt update
+       ```
+    
+    2. **Install dependencies**:
+       ```bash
+       sudo apt install -y software-properties-common apt-transport-https wget
+       ```
+    
+    3. **Import Microsoft’s GPG key**:
+       ```bash
+       wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+       sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+       ```
+    
+    4. **Add the VS Code repository**:
+       ```bash
+       sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+       ```
+    
+    5. **Update the package list again**:
+       ```bash
+       sudo apt update
+       ```
+    
+    6. **Install VS Code**:
+       ```bash
+       sudo apt install -y code
+       ```
+    
+    7. **Clean up**:
+       ```bash
+       rm packages.microsoft.gpg
+       ```
+    
+    8. **Launch VS Code**:
+       ```bash
+       code
+       ```
+    
+    ### Notes:
+    - These commands assume you’re using a 64-bit Ubuntu system.
+    - If you encounter issues, ensure your system is fully updated (`sudo apt upgrade`) before starting.
+    - You can also install VS Code by downloading the `.deb` package from the [official VS Code website](https://code.visualstudio.com/) and running:
+      ```bash
+      sudo dpkg -i <downloaded-file>.deb
+      sudo apt install -f
+      ```
+ 
 </details> 
 
 
