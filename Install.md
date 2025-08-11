@@ -125,6 +125,22 @@
 </details>
 
 
+## Install langchain
+<details>
+<summary>Install langchain </summary>
+
+    ##Vist   https://www.langchain.com/
+    ##Vist   https://python.langchain.com/docs/introduction/
+    ##Vist  https://python.langchain.com/api_reference/ollama/chat_models/langchain_ollama.chat_models.ChatOllama.html
+
+    #ChatOllama
+    ollama pull mistral:v0.3
+    pip install -U langchain-ollama
+
+</details>
+
+
+
 ## Ref.
 
 ##Vist https://ollama.com/download
