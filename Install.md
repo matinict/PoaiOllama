@@ -86,7 +86,8 @@
 
 ## Install python
 <details>
-<summary>Install python3  Linux</summary>
+<summary>Install python3  Linux</summary>2
+        
     ##Vist   https://www.python.org/downloads/source/
     or for linux 
     # For Debian/Ubuntu, use:
