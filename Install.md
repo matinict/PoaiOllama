@@ -21,7 +21,7 @@
 ## VS Code
 
 <details>
-<summary>VS Code</summary>
+<summary>## VS Code</summary>
 
 #### Click the button to install:
 
@@ -34,52 +34,22 @@
     1. **Update the package list**:
        ```bash
        sudo apt update
-       ```
-    
-    2. **Install dependencies**:
-       ```bash
        sudo apt install -y software-properties-common apt-transport-https wget
-       ```
-    
-    3. **Import Microsoft’s GPG key**:
-       ```bash
        wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
        sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-       ```
-    
-    4. **Add the VS Code repository**:
-       ```bash
-       sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-       ```
-    
-    5. **Update the package list again**:
-       ```bash
+       sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'    
        sudo apt update
-       ```
-    
-    6. **Install VS Code**:
-       ```bash
        sudo apt install -y code
-       ```
-    
-    7. **Clean up**:
-       ```bash
-       rm packages.microsoft.gpg
-       ```
-    
-    8. **Launch VS Code**:
-       ```bash
+       rm packages.microsoft.gpg     
        code
-       ```
-    
+       ```    
     ### Notes:
     - These commands assume you’re using a 64-bit Ubuntu system.
     - If you encounter issues, ensure your system is fully updated (`sudo apt upgrade`) before starting.
     - You can also install VS Code by downloading the `.deb` package from the [official VS Code website](https://code.visualstudio.com/) and running:
       ```bash
       sudo dpkg -i <downloaded-file>.deb
-      sudo apt install -f
-      ```
+      sudo apt install -f      ```
  
 </details> 
 
