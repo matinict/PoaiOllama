@@ -3,11 +3,15 @@
 
 ## Install Ollama  Linux
 
-    ##Vist https://ollama.com/download
-    ##Install with one command
-    curl -fsSL https://ollama.com/install.sh | sh
-    sudo usermod -aG ollama $USER
-    sudo chmod -R 775 /usr/share/ollama/.ollama
+    <details>
+    <summary>Install Ollama  Linux</summary>
+        ##Vist https://ollama.com/download
+        ##Install with one command
+        curl -fsSL https://ollama.com/install.sh | sh
+        sudo usermod -aG ollama $USER
+        sudo chmod -R 775 /usr/share/ollama/.ollama
+    </details>
+
 
 ### Ollama  Linux Cli 
 
@@ -18,10 +22,10 @@
 
 ## Install model  Linux
 
-## VS Code
+## Install  VS Code
 
 <details>
-<summary>## VS Code</summary>
+<summary> VS Code</summary>
 
 #### Click the button to install:
 
