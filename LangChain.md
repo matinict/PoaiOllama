@@ -3,7 +3,7 @@
 ## langchain Call Ollama Model
 
 <details>
-  <summary> Call Ollama Model </summary>
+  <summary> Click Show/Hide </summary>
   
     from langchain_ollama import ChatOllama  
     llm = ChatOllama(
@@ -18,7 +18,7 @@
 ## invoke Message with LangChain
 
   <details>
-    <summary> invoke Message with LangChain </summary>
+     <summary> Click Show/Hide </summary>
     
       response = llm.invoke("what is capital of Bangladesh?")
       print(response.content)
@@ -28,7 +28,7 @@
 ## Message Streaming with LangChain
 
 <details>
-  <summary> Message Streaming with LangChain </summary>
+   <summary> Click Show/Hide </summary>
   
     for chuck in  llm.stream("what is capital of India?"):
         print(chuck.content, end="", flush=True)
@@ -41,7 +41,7 @@
 ## Understanding Prompt Templates
 
 <details>
-  <summary> Understanding Prompt Templates </summary>
+   <summary> Click Show/Hide </summary>
   
       from langchain.prompts import PromptTemplate
       prompt_template = PromptTemplate.from_template("What is the role of AI in software Engineering")
@@ -54,7 +54,7 @@
 ## Understanding Prompt Templating for reusable Prompts
 
 <details>
-  <summary> Understanding Prompt Templates </summary>
+   <summary> Click Show/Hide </summary>
   
       from langchain.prompts import PromptTemplate
       prompt_template = PromptTemplate.from_template("What is the role of {type} in software Engineering")
@@ -68,7 +68,7 @@
 ## Chaining Mechanism in LangChain
 
 <details>
-  <summary> Understanding Prompt Templates </summary>
+   <summary> Click Show/Hide </summary>
   
     from langchain.prompts import PromptTemplate
     prompt_template = PromptTemplate.from_template("What is the role of {type} in software Engineering")
@@ -89,7 +89,7 @@
 ## Chaining with Output Parsers
 
 <details>
-  <summary> Click Show </summary>
+  <summary> Click Show/Hide </summary>
   
     from langchain.prompts import PromptTemplate
     from langchain_core.output_parsers import JsonOutputParser
@@ -99,4 +99,8 @@
     print(result)
 
 </details>
+
+
+
+## Ref
 
