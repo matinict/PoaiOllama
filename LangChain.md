@@ -1,5 +1,7 @@
 # LangChain Basic 
 
+## langchain Call Ollama Model
+
 <details>
   <summary> Call Ollama Model </summary>
   
@@ -13,10 +15,11 @@
 
 </details>
 
+## invoke Message with LangChain
 
-<details>
-  <summary> invoke Message with LangChain </summary>
-  
-    response = llm.invoke("what is capital of Bangladesh?")
-    print(response.content)
-</details>
+  <details>
+    <summary> invoke Message with LangChain </summary>
+    
+      response = llm.invoke("what is capital of Bangladesh?")
+      print(response.content)
+  </details>
