@@ -105,7 +105,23 @@
 
 <details>
   <summary> Click Show/Hide </summary>
-  
+    
+    
+    from langchain.prompts import PromptTemplate
+    #from langchain_core.output_parsers import JsonOutputParser
+    from langchain_core.output_parsers import StrOutputParser
+    from langchain_core.runnables import RunnableSequence
+    
+    prompt_template = PromptTemplate.from_template(
+    "Answer the following in JSON format: What is the role of {type} in software Engineering?"
+    )
+    #parser = JsonOutputParser()
+    parser = StrOutputParser()  # Using StrOutputParser for simplicity
+    chain = RunnableSequence(prompt_template, llm, parser)
+    result = chain.invoke({'type': 'AI'})
+    print(result)
+
+    # For JsonOutputParser
     from langchain.prompts import PromptTemplate
     from langchain_core.output_parsers import JsonOutputParser
     from langchain_core.runnables import RunnableSequence
