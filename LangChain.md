@@ -71,17 +71,24 @@
    <summary> Click Show/Hide </summary>
   
     from langchain.prompts import PromptTemplate
-    prompt_template = PromptTemplate.from_template("What is the role of {type} in software Engineering")
-    chain prompt_template | llm
-    result = chain.invoke({'type': 'AI'})
-    print(result)
- 
-    ## Correct
-    from langchain.prompts import PromptTemplate
-    from langchain_core.runnables import RunnableSequence
-    prompt_template = PromptTemplate.from_template("What is the role of {type} in software")
-    chain = RunnableSequence(prompt_template, llm)  # Pass as separate arguments
-    result = chain.invoke({'type': 'AI'})
+    from langchain_openai import OpenAI    
+    # 1. Initialize the LLM
+    # You will need to set up your API key, for example:
+    # import os
+    # os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"    
+    # Or if you're using a free service or a different provider,
+    # the initialization might look slightly different.
+    # This example uses a simple OpenAI LLM.
+    llm = OpenAI(model="gpt-3.5-turbo-instruct")    
+    # 2. Define the prompt template
+    prompt_template = PromptTemplate.from_template(
+      "What is the role of {type} in software engineering?"
+    )    
+    # 3. Create the chain by piping the prompt to the LLM
+    chain = prompt_template | llm    
+    # 4. Invoke the chain with the input variable
+    result = chain.invoke({'type': 'AI'})    
+    # 5. Print the result
     print(result)
 </details>
 
