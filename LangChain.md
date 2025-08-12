@@ -1,4 +1,4 @@
-# LangChain
+# LangChain Basic 
 
 <details>
   <summary> Call Ollama Model </summary>
@@ -11,4 +11,12 @@
         max_tokens=1000
     )
 
+</details>
+
+
+<details>
+  <summary> invoke Message with LangChain </summary>
+  
+    response = llm.invoke("what is capital of Bangladesh?")
+    print(response.content)
 </details>
