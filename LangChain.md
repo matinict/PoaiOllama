@@ -69,7 +69,15 @@
 
 <details>
    <summary> Click Show/Hide </summary>
-  
+
+    from langchain.prompts import PromptTemplate
+    from langchain_core.runnables import RunnableSequence
+    prompt_template = PromptTemplate.from_template("What is the role of {type} in software")
+    chain = RunnableSequence(prompt_template, llm)  # Pass as separate arguments
+    result = chain.invoke({'type': 'AI'})
+    print(result)
+   
+    ## Details
     from langchain.prompts import PromptTemplate
     from langchain_openai import OpenAI    
     # 1. Initialize the LLM
