@@ -108,8 +108,13 @@
   
     from langchain.prompts import PromptTemplate
     from langchain_core.output_parsers import JsonOutputParser
-    prompt_template = PromptTemplate.from_template("What is the role of {type} in software Engineering")
-    chain prompt_template | llm | JsonOutputParser()
+    from langchain_core.runnables import RunnableSequence
+    
+    prompt_template = PromptTemplate.from_template(
+        "Answer the following in JSON format: What is the role of {type} in software Engineering?"
+    )
+    parser = JsonOutputParser()
+    chain = RunnableSequence(prompt_template, llm, parser)
     result = chain.invoke({'type': 'AI'})
     print(result)
 
