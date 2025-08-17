@@ -1,5 +1,5 @@
-# PoaiOllama
-Here’s a polished **README.md** version of your content, optimized for clarity and usability, with verified and enhanced instructions about **Ollama**, **LangChain**, and installation procedures—sourced from official documentation and reliable references:
+# Ollama
+Iinstructions about **Ollama**, **LangChain** & Model installation procedures—sourced from official documentation and reliable references:
 
 ---
 
