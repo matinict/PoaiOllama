@@ -122,6 +122,9 @@
         ##**On Windows (PowerShell):** 
         .venv\Scripts\Activate.ps1 
         
+        #DeActivating the Virtual Environment 
+        deactivate
+        
 </details>
 
 
